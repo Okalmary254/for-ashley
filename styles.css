@@ -163,16 +163,16 @@ input {
   }
 }
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   font-family: 'Helvetica', sans-serif;
-  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-x: hidden; /* prevent horizontal scroll *
   background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
 }
 
 #app {
-  max-width: 480px; /* mobile-friendly width */
+  max-width: 480px; /* mobile-friendly width *
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
@@ -181,7 +181,9 @@ body {
 h1, h2, h3, p {
   margin: 0.5em 0;
   text-align: center;
-}
+} */
+
+*/
 
 button {
   display: block;
