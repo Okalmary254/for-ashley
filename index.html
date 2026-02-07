@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For Ashley ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<!-- Floating teddy bears -->
+<div class="teddy teddy-left">🧸❤️</div>
+<div class="teddy teddy-right">🧸❤️</div>
+
+<div id="app">
+
+  <!-- LANDING -->
+  <section id="intro" class="fade-in">
+    <div class="carousel">
+      <img src="Ashley1.jpeg" class="active">
+      <img src="Ashley2.jpeg">
+      <img src="Ashley3.jpeg">
+    </div>
+
+    <h1>Hi Ashley, my love 🌙</h1>
+    <p class="subtitle">
+      This isn’t just a website.<br>
+      It’s a quiet moment I made… just for you.
+    </p>
+
+    <button onclick="next()">Come with me</button>
+  </section>
+
+  <!-- POEM -->
+  <section class="poem hidden fade-in">
+    <p class="poem-text">
+      I didn’t rush this question.<br>
+      I let it grow in silence.<br><br>
+
+      In the pauses between our words,<br>
+      In the warmth I feel when you smile,<br>
+      In the way your presence makes ordinary moments feel rare.<br><br>
+
+      This is me, choosing you softly.<br>
+      Not loudly. Not hurried.<br>
+      Just honestly.
+    </p>
+
+    <button onclick="next()">Keep going 🤍</button>
+  </section>
+
+  <!-- QUESTIONS -->
+  <section class="question hidden">
+    <p>When you think of us, what feeling comes first? 💭</p>
+    <input type="text" id="q1">
+    <button onclick="saveAnswer('q1')">Next</button>
+  </section>
+
+  <section class="question hidden">
+    <p>What’s a small thing I do that you secretly love? ✨</p>
+    <input type="text" id="q2">
+    <button onclick="saveAnswer('q2')">Next</button>
+  </section>
+
+  <section class="question hidden">
+    <p>If I held your hand right now, what would you feel? 🤍</p>
+    <input type="text" id="q3">
+    <button onclick="saveAnswer('q3')">Next</button>
+  </section>
+
+  <section class="question hidden">
+    <p>How do you like to be loved on days you don’t say much? 🌧️</p>
+    <input type="text" id="q4">
+    <button onclick="saveAnswer('q4')">Next</button>
+  </section>
+
+  <section class="question hidden">
+    <p>What kind of Valentine would you want me to be? 🌹</p>
+    <input type="text" id="q5">
+    <button onclick="next()">Almost there</button>
+  </section>
+
+  <!-- FINAL QUESTION -->
+  <section id="final" class="hidden">
+    <div id="summary">
+      <h2>Your words, my favorite poem 💌</h2>
+
+      <p>💭 <span id="a1"></span></p>
+      <p>✨ <span id="a2"></span></p>
+      <p>🤍 <span id="a3"></span></p>
+      <p>🌧️ <span id="a4"></span></p>
+      <p>🌹 <span id="a5"></span></p>
+
+      <h1 class="valentine">Will you be my Valentine, Ashley? ❤️</h1>
+    </div>
+
+    <button class="yes-btn" onclick="celebrate()">Yes 💞</button>
+  </section>
+
+  <!-- CELEBRATION -->
+  <section id="celebration" class="hidden">
+  <div id="finalCard">
+    <h2>Our little moment 💖</h2>
+
+    <p>💭 <span id="c1"></span></p>
+    <p>✨ <span id="c2"></span></p>
+    <p>🤍 <span id="c3"></span></p>
+    <p>🌧️ <span id="c4"></span></p>
+    <p>🌹 <span id="c5"></span></p>
+
+    <h3>She said yes 💫</h3>
+  </div>
+
+  <div class="floating">🧸❤️ 🌹 💐 🧸❤️ 🌸 💖</div>
+  <div class="floating" style="animation-delay: 2.5s;">🌹 💐 🧸❤️ 🌸 💖 🧸❤️ 🌹</div>
+  <div class="floating" style="animation-delay: 5s;">🧸❤️ 🌹 💐 🧸❤️ 🌸 💖</div>
+
+  <button id="shotBtn" class="hidden" onclick="takeScreenshot()">
+    Screenshot & Send to me
+  </button>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
