@@ -163,6 +163,26 @@ input {
   }
 }
 
+#musicBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  background: #ff5c8d;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#musicBtn:active {
+  transform: scale(0.95);
+}
+
+
 /* body {
   margin: 0;
   padding: 0;

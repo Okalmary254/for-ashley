@@ -91,3 +91,30 @@ function spawnHeart() {
 }
 
 setInterval(spawnHeart, 700);
+
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+musicBtn.addEventListener("click", () => {
+  if (music.paused) {
+    music.play();
+    musicBtn.textContent = "⏸ Pause music";
+  } else {
+    music.pause();
+    musicBtn.textContent = "▶ Play music";
+  }
+});
+
+function fadeInMusic() {
+  let vol = 0;
+  music.volume = 0;
+  music.play();
+  const fade = setInterval(() => {
+    if (vol < 0.5) { // max volume 50%
+      vol += 0.01;
+      music.volume = vol;
+    } else {
+      clearInterval(fade);
+    }
+  }, 100);
+}
