@@ -182,3 +182,22 @@ h1, h2, h3, p {
   margin: 0.5em 0;
   text-align: center;
 }
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff5c8d;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  max-width: 90%;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #ff3366;
+}
